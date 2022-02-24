@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F3F3FA;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h5{
+    font-size: 15px;
+}
+
+h6{
+    font-size: 10px;
+}
+
+input{
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #080501;
+}
+
+label{
+    color: #080501;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+    color: #D48B00;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    border: 1px solid;
+    box-shadow: 0 0 25px #fff8cd;
+    background: linear-gradient(45deg, #D48B00, #EFD319);
+    border-radius: 25px;
+    color: #F3F3FA;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: #DBA401;
+    transition: .5s;
+}
+
+a{
+    color: #DBA401;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.book {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    max-height: auto;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    
+  }
+  .block {
+    width: auto;
+  }
+
+  .favorite {
+    position: relative;
+    top: 30px;
+    left: 40%;
+    color:red;
+  }
+
+  .favorite:hover {
+      color:#F8A4A4;
+      cursor: pointer;
+  }
+
+  .portada {
+    text-align: center;
+	display: inline-block;
+  	border-radius: 4px;
+ 	 padding: 5px;
+  	max-width: 150px;
+ 	 height: auto;
+ 	 margin: 10px;
+  	cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #DBA401;
+    color: white;
+    text-align: center;
+  }
+    
+  .footer-tabla {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  a.foot {
+    color:white;
+}
+
+a.foot:hover{
+    color:black;
+}
+
+th.foot{
+    font-size: 22px;
+    font-weight: bold;
+}
+ 
