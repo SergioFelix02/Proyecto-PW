@@ -4,6 +4,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: #F3F3FA;
 }
+
 h1{
     font-size: 35px;
 }
@@ -28,219 +29,6 @@ h6{
     font-size: 10px;
 }
 
-input{
-    border: none;
-    background: none;
-    outline: none;
-    border-bottom: 2px solid #080501;
-}
-
-label{
-    color: #080501;
-    transform: translateY(-50%);
-    font-size: 16px;
-    transition: .5s;
-}
-
-
-a{
-    color: #DBA401;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-pa{
-		position: fixed;
-		width: 100%;
-		height: 100vh;
-		background: rgba(228, 227, 227, 0.6);
-		z-index: -1;
-		top: 0;left: 0;
-	}
-
-/*Estilos para el encabezado*/
-	.header{
-		width: 100%;
-		height: 100px;
-		position: fixed;
-		top: 0;left: 0;
-	}
-	.container{
-		width: 90%;
-		max-width: 1200px;
-		margin: auto;
-	}
-	.container .btn-menu, .logo{
-		float: left;
-		line-height:100px;
-	}
-	.container .btn-menu label{
-		color: rgb(31, 30, 30);
-		font-size: 25px;
-		cursor: pointer;
-	}
-	.logo h1{
-		color: rgb(32, 32, 32);
-		font-weight: 400;
-		font-size: 22px;
-		margin-left: 10px;
-	}
-	.container .menu{
-		float: right;
-		line-height: 100px;
-	}
-	.container .menu a{
-		display: inline-block;
-		padding: 15px;
-		line-height: normal;
-		text-decoration: none;
-		color: rgb(0, 0, 0);
-		transition: all 0.3s ease;
-		border-bottom: 2px solid transparent;
-		font-size: 15px;
-		margin-right: 5px;
-	}
-	.container .menu a:hover{
-		border-bottom: 2px solid #EFD319;
-		padding-bottom: 5px;
-	}
-/*Fin de Estilos para el encabezado*/
-
-/*Menù lateral*/
-	#btn-menu{
-		display: none;
-	}
-	.container-menu{
-		position: absolute;
-		background: rgba(245, 243, 243, 0.5);
-		width: 100%;
-		height: 100vh;
-		top: 0;left: 0;
-		transition: all 500ms ease;
-		opacity: 0;
-		visibility: hidden;
-	}
-	#btn-menu:checked ~ .container-menu{
-		opacity: 1;
-		visibility: visible;
-	}
-	.cont-menu{
-		width: 100%;
-		max-width: 250px;
-		background: #DDDCDD;
-		height: 100vh;
-		position: relative;
-		transition: all 250ms ease;
-		transform: translateX(-100%);
-	}
-	#btn-menu:checked ~ .container-menu .cont-menu{
-		transform: translateX(0%);
-	}
-	.cont-menu nav{
-		transform: translateY(15%);
-	}
-	.cont-menu nav a{
-		display: block;
-		text-decoration: none;
-		padding: 20px;
-		color: #000000;
-		border-left: 5px solid transparent;
-		transition: all 400ms ease;
-	}
-	.cont-menu nav a:hover{
-		border-left: 5px solid #000000;
-		background: #EFD319;
-	}
-	.cont-menu label{
-		position: absolute;
-		right: 5px;
-		top: 10px;
-		color: #000000;
-		cursor: pointer;
-		font-size: 18px;
-	}
-/*Fin de Menù lateral*/
-
-
-/* Comienza estilo del footer */
-	.footer {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		height: 150px;
-		background-color: #DBA401;
-		color: white;
-		text-align: center;
-	  }
-		
-	  .footer-tabla {
-		table-layout: fixed;
-		width: 100%;
-	  }
-	
-	  a.foot {
-		color:white;
-	}
-	
-	a.foot:hover{
-		color:black;
-	}
-	
-	th.foot{
-		font-size: 22px;
-		font-weight: bold;
-	}
-/* Termina estilo del footer */
-
-/* Comienza estilo de libros */
-.book {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 200px;
-    max-height: auto;
-    margin: auto;
-    text-align: center;
-  }
-  
-  .row {
-    width: 100%;
-    margin: 0 auto;
-    display: inline-flex;
-    justify-content: center; 
-    
-  }
-  .block {
-    width: auto;
-  }
-
-  .favorite {
-    position: relative;
-    top: 30px;
-    left: 40%;
-    color:red;
-  }
-
-  .favorite:hover {
-      color:#F8A4A4;
-      cursor: pointer;
-  }
-
-  .portada {
-    text-align: center;
-	display: inline-block;
-  	border-radius: 4px;
- 	 padding: 5px;
-  	max-width: 150px;
- 	 height: auto;
- 	 margin: 10px;
-  	cursor: pointer;
-}
-/* Termina estilo de libros */
-
-/* Comienza estilo de input/login */
 input{
     border: none;
     background: none;
@@ -278,114 +66,84 @@ input[type="submit"]:hover{
     border-color: #DBA401;
     transition: .5s;
 }
-/* Termina estilo de input/login */
 
-/* Inicia estilo login */
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    border-radius: 15px;
-    box-shadow: 0 0 25px #a7a7a7;
-}
-
-.center h1{
-    text-align: center;
-    padding: 0 0 10px 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #080501;
-}
-
-.center form{
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-
-form .txtField{
-    position: relative;
-    border-bottom: 2px solid #080501;
-    margin: 30px 0;
-}
-
-.txtField input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.txtField label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #080501;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.txtField span::before{
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #cfe3fd;
-    transition: .5s;
-}
-
-.txtField input:focus ~ label,
-.txtField input:valid ~ label{
-    top: -5px;
-    color: #D48B00;
-}
-
-.txtField input:focus ~ span::before,
-.txtField input:valid ~ span::before{
-    width: 100%;
-}
-
-input[type="submit"]{
-    width: 100%;
-    height: 50px;
-    border: 1px solid;
-    margin-top: 20px;
-    box-shadow: 0 0 25px #fff8cd;
-    background: linear-gradient(45deg, #D48B00, #EFD319);;
-    border-radius: 25px;
-    font-size: 18px;
-    color: #F3F3FA;
-    font-weight: 700;
-    cursor: pointer;
-    outline: none;
-}
-
-input[type="submit"]:hover{
-    border-color: #DBA401;
-    transition: .5s;
-}
-
-.signupLink{
-    margin: 30px 0;
-    text-align: center;
-    font-size: 16px;
-    color: #666666;
-}
-
-.signupLink a{
+a{
     color: #DBA401;
     text-decoration: none;
 }
 
-.signupLink a:hover{
+a:hover{
     text-decoration: underline;
 }
-/*Termina estilo login*/
+
+.book {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    max-height: auto;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    
+  }
+  .block {
+    width: auto;
+  }
+
+  .favorite {
+    position: relative;
+    top: 30px;
+    left: 40%;
+    color:red;
+  }
+
+  .favorite:hover {
+      color:#F8A4A4;
+      cursor: pointer;
+  }
+
+  .portada {
+    text-align: center;
+	display: inline-block;
+  	border-radius: 4px;
+ 	 padding: 5px;
+  	max-width: 150px;
+ 	 height: auto;
+ 	 margin: 10px;
+  	cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #DBA401;
+    color: white;
+    text-align: center;
+  }
+    
+  .footer-tabla {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  a.foot {
+    color:white;
+}
+
+a.foot:hover{
+    color:black;
+}
+
+th.foot{
+    font-size: 22px;
+    font-weight: bold;
+}
+ 
