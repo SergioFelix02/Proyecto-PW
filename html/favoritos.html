@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-favoritos.css">
     <script src="https://kit.fontawesome.com/d62b608a4d.js" crossorigin="anonymous"></script>    <!--Esto debe ir para los íconos-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <title>Mis favoritos</title>
 </head>
 <body>
@@ -48,19 +49,19 @@
   <h2 style="text-align: center;"><i class="fa-solid fa-heart"></i> Mis favoritos</h2>
       <div class="row">   
           <div class="book block">
-              <i class="fa-solid fa-heart favorite" style="font-size:20px"></i>
+              <i id="f1" class="fa-solid fa-heart favorite favoriteActive" style="font-size:20px"></i>
               <img class="portada" src="../img/portada/HP.jpeg"/>
               <h4> Harry Potter y la Piedra Filosofal </h4>
               <p style="cursor:pointer;font-weight:bold"> J. K. Rowling </p>
             </div>      
           <div class="book block">
-            <i class="fa-solid fa-heart favorite" style="font-size:20px"></i>
+            <i id="f2" class="fa-solid fa-heart favorite favoriteActive" style="font-size:20px"></i>
             <img class="portada" src="../img/portada/LOTR.jpeg"/>
             <h4> El Seños de los Anillos, la Comunidad del Anillo </h4>
             <p style="cursor:pointer;font-weight:bold"> J. R. R. Tolkien </p>
           </div>
           <div class="book block">
-            <i class="fa-solid fa-heart favorite" style="font-size:20px"></i>
+            <i id="f3" class="fa-solid fa-heart favorite favoriteActive" style="font-size:20px"></i>
             <img class="portada" src="../img/portada/GOT.jpeg"/>
             <h4> Juego de Tronos </h4>
             <p style="cursor:pointer;font-weight:bold"> G. R. R. Martin </p>  
@@ -93,5 +94,26 @@
                 </tr>
           </table>
       </div>
-</body>
+
+      <script>
+      
+     
+        $(document).ready(function(){
+           $( ".fa-heart" ).click(function() {
+            if($(this).hasClass("favoriteActive")) {
+                $( this ).removeClass( "favoriteActive" );
+                $( this ).addClass( "favoriteInactive" );
+                alert("Eliminado de favoritos.");
+            } else {
+                $( this ).removeClass( "favoriteInactive" );
+                $( this ).addClass( "favoriteActive" );
+                alert("Agregado a favoritos.");
+            }
+    
+         });
+     });
+  
+
+     </script>
+  </body>
 </html>

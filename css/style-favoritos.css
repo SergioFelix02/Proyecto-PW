@@ -48,12 +48,19 @@ h5{
     position: relative;
     top: 30px;
     left: 40%;
-    color:red;
   }
 
   .favorite:hover {
       color:#F8A4A4;
       cursor: pointer;
+  }
+
+  .favoriteActive {
+      color: red;
+  }
+
+  .favoriteInactive {
+      color: #F8A4A4;
   }
 
   .portada {
