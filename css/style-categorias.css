@@ -83,18 +83,19 @@ h5{
     width: 100%;
   }
 
- a.foot {
-     color:white;
- }
+  a.foot {
+    color:white;
+    font-size: smaller;
+}
 
- a.foot:hover{
-     color:black;
- }
+a.foot:hover{
+    color:black;
+}
 
- th.foot{
-     font-size: 22px;
-     font-weight: bold;
- }
+th.foot{
+    font-size: small;
+    font-weight: bold;
+}
   
  /*Menù lateral*/
  #btn-menu{
