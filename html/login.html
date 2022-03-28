@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/js-login.js"></script>
     <title>Inicio de sesion</title>
 </head>
 <body>
@@ -20,9 +22,11 @@
                 <input type="password" required>
                 <label>Contrase&ntilde;a</label>
             </div>
-            <input type="submit" value="Iniciar">
+            <div id="button">
+                <input id="btn" type="submit" value="Iniciar Sesion">
+            </div>
             <div class="signupLink">
-                No te has registrado? <a href="#">Registrate</a>
+                <div id="text">No te has registrado?</div> <a href="#" id="register">Registrate</a>
             </div>
         </form>
     </div>
