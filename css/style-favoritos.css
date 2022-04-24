@@ -73,29 +73,17 @@ h5{
  	 margin: 10px;
   	cursor: pointer;
 }
-<<<<<<< HEAD
 footer {
     position: absolute;
-=======
-
-
-footer {
-    position: bottom;
->>>>>>> 182dd6ac91f673c04bf2eb498f089f886b15815e
     left: 0;
     bottom: 0;
     right: 0;
     width: 100%;
-<<<<<<< HEAD
     height: 120px;
-=======
-    height: 130px;
->>>>>>> 182dd6ac91f673c04bf2eb498f089f886b15815e
     background-color: #DBA401;
     color: white;
     text-align: left;
   }
-<<<<<<< HEAD
 .footer{
     float:left;
     margin-left: 20px;
@@ -103,27 +91,6 @@ footer {
     text-decoration: none;
     font-size: 15px;
 }
-=======
-    
-  .footer-tabla {
-    table-layout: fixed;
-    width: 100%;
-  }
-
- a.foot {
-     color:white;
-     font-size: smaller;
- }
-
- a.foot:hover{
-     color:black;
- }
-
- th.foot{
-     font-size: small;
-     font-weight: bold;
- }
->>>>>>> 182dd6ac91f673c04bf2eb498f089f886b15815e
   
  /*Menù lateral*/
  #btn-menu{
