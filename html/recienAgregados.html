@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/d62b608a4d.js" crossorigin="anonymous"></script> 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <title>Recién agregados</title>
+    <link rel="icon" href="../img/icon.ico">
 </head>
 <body>
     <header class="header">
@@ -310,7 +311,21 @@
       <p style="cursor:pointer;font-weight:bold"> Dross Rotzank </p>  
     </div>
   </div>
-
+  <script>
+    $(document).ready(function(){
+       $( ".fa-heart" ).click(function() {
+        if($(this).hasClass("favoriteActive")) {
+            $( this ).removeClass( "favoriteActive" );
+            $( this ).addClass( "favoriteInactive" );
+            alert("Eliminado de favoritos.");
+        } else {
+            $( this ).removeClass( "favoriteInactive" );
+            $( this ).addClass( "favoriteActive" );
+            alert("Agregado a favoritos.");
+        }
+     });
+ });
+ </script>
   <footer>
     <div class="footer">
       <p>Copyright - Todos los derechos reservados</p>
