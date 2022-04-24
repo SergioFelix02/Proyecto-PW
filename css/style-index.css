@@ -42,12 +42,6 @@ label{
     transition: .5s;
 }
 
-
-a{
-    color: #DBA401;
-    text-decoration: none;
-}
-
 a:hover{
     text-decoration: underline;
 }
@@ -67,6 +61,7 @@ pa{
 		height: 100px;
 		position: fixed;
 		top: 0;left: 0;
+		background-color: #F3F3FA ;
 	}
 	.container{
 		width: 90%;
@@ -132,7 +127,7 @@ pa{
 		max-width: 250px;
 		background: #DDDCDD;
 		height: 100vh;
-		position: relative;
+		position: fixed;
 		transition: all 250ms ease;
 		transform: translateX(-100%);
 	}
@@ -164,32 +159,20 @@ pa{
 	}
 	/*Fin de Menù lateral*/
 
-	.footer {
-		position: fixed;
+	footer {
+		position: absolute;
 		left: 0;
 		bottom: 0;
 		width: 100%;
-		height: 150px;
+		height: 120px;
 		background-color: #DBA401;
 		color: white;
-		text-align: center;
+		text-align: left;
 	  }
-		
-	  .footer-tabla {
-		table-layout: fixed;
-		width: 100%;
-	  }
-	
-	  a.foot {
-		color:white;
+	.footer{
+		float:left;
+		margin-left: 20px;
+		color: white;
+		text-decoration: none;
+		font-size: 15px;
 	}
-	
-	a.foot:hover{
-		color:black;
-	}
-	
-	th.foot{
-		font-size: 22px;
-		font-weight: bold;
-	}
-	 
