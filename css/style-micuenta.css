@@ -1,12 +1,46 @@
-.container-menu
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F3F3FA;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h5{
+    font-size: 15px;
+}
+
+h6{
+    font-size: 10px;
+}
+
+.container-top
 {
     float: left;
     position: relative;
+    z-index: -2;
+
 }
 .container-content
 {
     float:left;
     position: relative;
+    z-index: -2;
 }
 .menu-profile{
     background-color: #F3F3FA;
@@ -20,11 +54,11 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    box-shadow: 0px 0px 20px rgb(114, 114, 114);
     margin-left: 0px;
     margin-top: 0px;
-    border-width: 2px;
-    border-color: black;
+    border-width: 1px;
+    border-color: #D48B00;
+    z-index: -2;
 }
 .menu-items{
     background-color: #F3F3FA;
@@ -36,11 +70,11 @@
     border-radius: 10px;
     padding-left: 20px;
     padding-top: 10px;
-    box-shadow: 0px 0px 20px rgb(114, 114, 114);
     margin-left: 0px;
     margin-top: 0px;
-    border-width: 2px;
-    border-color: black;
+    border-width: 1px;
+    border-color: #DBA401;
+    z-index: -2;
 }
 .icon
 {
@@ -49,26 +83,166 @@
 }
 .container-content{
     background-color: #F3F3FA;
-    width: 1500px;
-    height: 910px;
+    width:auto;
+    height:900px;
     border-color: #d5d5da;
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
     padding-left: 20px;
     padding-top: 10px;
-    box-shadow: 0px 0px 20px rgb(114, 114, 114);
     margin-left: 10px;
     margin-top: 0px;
-    border-width: 2px;
-    border-color: black;
+    border-width: 0px;
+    border-color: #DBA401;
+    z-index: -2;
 }
 
 a
 {
     color: black;
 }
+
+a:hover{
+    color: #DBA401;
+}
 input[type="submit"]{
     width: 100px;
     height: 40px;
 }
+input[type="submit"]{
+    padding: 10px;
+    border: 1px solid;
+    box-shadow: 0 0 25px #fff8cd;
+    background: linear-gradient(45deg, #D48B00, #EFD319);
+    border-radius: 25px;
+    color: #F3F3FA;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+ 
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+		background-color: #F3F3FA ;
+        z-index: 999;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: rgb(31, 30, 30);
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: rgb(32, 32, 32);
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #EFD319;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(245, 243, 243, 0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+        z-index: 999;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #DDDCDD;
+		height: 100vh;
+		position: fixed;
+		transition: all 250ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #000000;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #000000;
+		background: #EFD319;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #000000;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+
+	footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 120px;
+		background-color: #DBA401;
+		color: white;
+		text-align: left;
+	  }	
+	.footer{
+		float:left;
+		margin-left: 20px;
+		color: white;
+		text-decoration: none;
+		font-size: 15px;
+	}

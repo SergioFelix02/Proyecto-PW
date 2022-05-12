@@ -1,42 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Cuenta</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style-micuenta.css">
-    <link rel="icon" href="../img/icon.ico">
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+	<link rel="stylesheet" href="../css/style-micuenta.css">
+	
+	<script src="https://kit.fontawesome.com/d62b608a4d.js" crossorigin="anonymous"></script>  <!--Esto debe ir para los íconos-->
+	<link rel="icon" href="img/icon.ico">
 </head>
 <body>
-    <div class="container-all">
-        <div class="container-menu">
-            <div class="menu-profile">
-                <nav>
-                    <img src="#" class="icon">
-                    <h4>Nombre</h4>
-                    <h4># Seguidores | # Siguiendo</h4>
-                    <form>
-                        <input type="submit" name="editar" value="Editar">
-                    </form>
-                </nav>
-            </div>
-            <br>    
-            <div class="menu-items">
-                <nav>
-                    <h4><a href="#">Mi Perfil</a></h4>
-                    <h4><a href="#">Leer Después</a></h4>
-                    <h4><a href="#">Historial</a></h4>
-                    <h4><a href="#">Opciones de la cuenta</a></h4>
-                </nav>
-            </div>
-        </div>
-        <div class="container-content">  
-            <nav>
-                <iframe src="" frameborder="0" width="100%" height=910px></iframe>
-            </nav>
-        </div>
-    </div>
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu"><i class="fa-solid fa-bars"></i></i></label>
+		</div>
+			<div class="logo">
+				
+			</div>
+			<nav class="menu">
+				<a href="index.html">Inicio</a>
+				<a href="#">Carrito</a>
+				<a href="html/login.html">Iniciar Sesion</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+	
+<!--Menu Lateral--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+			<a href="../html/micuenta.html"><i class="fa-solid fa-user"></i> Mi Cuenta</a>
+			<a href="../html/categorias.html"><i class="fa-solid fa-book"></i> Categorías</a>
+			<a href="../html/favoritos.html"><i class="fa-solid fa-heart"></i> Mis Favoritos</a>
+			<a href="../html/populares.html"><i class="fa-solid fa-fire"></i> Más Populares</a>
+			<a href="../html/recienAgregados.html"><i class="fa-solid fa-clock"></i> Recién Agregados</a>
+			<a href="../html/mejorVotados.html"><i class="fa-solid fa-thumbs-up"></i> Mejor Votados</a>
+			<a href="../html/comentados.html"><i class="fa-solid fa-comment"></i> Más comentados</a>
+			<a href="#"><i class="fa-solid fa-sliders"></i></i> Opciones</a>
+		</nav>
+		<label for="btn-menu"><i class="fa-solid fa-angles-left"></i></label>
+	</div>
+</div>
+<br><br><br><br>
+
+<div class="container-all">
+	<div class="container-top">
+		<div class="menu-profile">
+			<nav>
+				<img src="#" class="icon">
+				<h4>Nombre</h4>
+				<h4># Seguidores | # Siguiendo</h4>
+				<form>
+					<input type="submit" name="editar" value="Editar">
+				</form>
+			</nav>
+		</div>
+		<br>    
+		<div class="menu-items">
+			<nav>
+				<h4><a href="#">Mi Perfil</a></h4>
+				<h4><a href="#">Leer Después</a></h4>
+				<h4><a href="#">Historial</a></h4>
+				<h4><a href="#">Opciones de la cuenta</a></h4>
+			</nav>
+		</div>
+	</div>
+	<div class="container-content">  
+		<nav>
+			<iframe src="" frameborder="0" width="100%" height=910px></iframe>
+		</nav>
+	</div>
+</div>
+<footer>
+	<div class="footer">
+		<p>Copyright - Todos los derechos reservados</p>
+		<p>Siguenos en nuestras redes</p>	
+		<p>
+			<a href="">Facebook</a>
+			<a href="">Instagram</a>
+			<a href="">Twitter</a>
+		</p>
+	  </div>
+</footer>
 </body>
-</html>
+</html> 

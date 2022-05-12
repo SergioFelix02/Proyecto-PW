@@ -44,29 +44,39 @@
       <label for="btn-menu"><i class="fa-solid fa-angles-left"></i></label>
     </div>
   </div>
-
+  
   <br><br><br><br>
   <h2 style="text-align: center;"><i class="fa-solid fa-heart"></i> Mis favoritos</h2>
-      <div class="row">   
+  <div class="row">  
+  <?php
+    include("conexion.php");
+    $conexion = mysqli_connect($server,$user,$pass,$bd)or die(mysql_error);
+    $contador = 0;
+    $query = "select * from libros";
+    $resultado = $conexion->query($query);
+    while($row = $resultado->fetch_assoc()){
+      if ($contador >= 5){
+        $contador = 0;
+        
+        ?>   
+        <div class="row">  
+        <?php  
+      }
+      $contador += 1;
+       ?>  
           <div class="book block">
               <i id="f1" class="fa-solid fa-heart favorite favoriteActive" style="font-size:20px"></i>
-              <img class="portada" src="../img/portada/HP.jpeg"/>
-              <h4> Harry Potter y la Piedra Filosofal </h4>
-              <p style="cursor:pointer;font-weight:bold"> J. K. Rowling </p>
-            </div>      
-          <div class="book block">
-            <i id="f2" class="fa-solid fa-heart favorite favoriteActive" style="font-size:20px"></i>
-            <img class="portada" src="../img/portada/LOTR.jpeg"/>
-            <h4> El Seños de los Anillos, la Comunidad del Anillo </h4>
-            <p style="cursor:pointer;font-weight:bold"> J. R. R. Tolkien </p>
-          </div>
-          <div class="book block">
-            <i id="f3" class="fa-solid fa-heart favorite favoriteActive" style="font-size:20px"></i>
-            <img class="portada" src="../img/portada/GOT.jpeg"/>
-            <h4> Juego de Tronos </h4>
-            <p style="cursor:pointer;font-weight:bold"> G. R. R. Martin </p>  
-         </div>
-      </div>  
+              <img class="portada" src="<?php echo($row['foto']);?>"/>
+              <h4><?php echo $row['nombre']; ?></h4>
+              <p style="cursor:pointer;font-weight:bold"> <?php echo $row['autor']; ?> </p>
+          </div>    
+          <h4><?php echo $contador; ?></h4>
+
+    <?php
+    }
+    ?>
+   </div>
+      
       <script>
         $(document).ready(function(){
            $( ".fa-heart" ).click(function() {
@@ -94,5 +104,5 @@
     </p>
     </div>
 </footer>
-  </body>
+</body>
 </html>
