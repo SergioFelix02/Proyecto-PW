@@ -14,13 +14,13 @@
 <body>
     <div class="center">
         <h1>Iniciar sesion</h1>
-        <form method="post">
+        <form method="POST" action="../php/login.php">
             <div class="txtField">
-                <input type="text" required>
+                <input id="usuario" type="text" required name="usuario">
                 <label>Usuario</label>
             </div>
             <div class="txtField">
-                <input type="password" required>
+                <input id="password" type="password" required name="password">
                 <label>Contrase&ntilde;a</label>
             </div>
             <div id="button">
