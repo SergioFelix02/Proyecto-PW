@@ -28,19 +28,18 @@ h5{
 h6{
     font-size: 10px;
 }
-
-.container-top
+.icon
 {
+    width: 150px;
+    height: 150px;   
+}
+.container-left{
     float: left;
     position: relative;
-    z-index: -2;
+    z-index: -1;
+	border-width: 1px;
+    border-color: #000000;
 
-}
-.container-content
-{
-    float:left;
-    position: relative;
-    z-index: -2;
 }
 .menu-profile{
     background-color: #F3F3FA;
@@ -58,12 +57,11 @@ h6{
     margin-top: 5px;
     border-width: 1px;
     border-color: #D48B00;
-    z-index: -2;
 }
 .menu-items{
     background-color: #F3F3FA;
     width: 300px;
-    height: 500px;
+    height: 300px;
     border-color: #d5d5da;
     border-style: solid;
     border-width: 2px;
@@ -74,37 +72,36 @@ h6{
     margin-top: 0px;
     border-width: 1px;
     border-color: #DBA401;
-    z-index: -2;
 }
-.icon
-{
-    width: 150px;
-    height: 150px;   
-}
-.container-content{
+
+.container-right{
     background-color: #F3F3FA;
-    width:auto;
-    height:900px;
+    width: auto;
+    height:685px;
     border-color: #d5d5da;
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
     padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 40px;
     margin-left: 10px;
-    margin-top: 0px;
+    margin-top: 5px;
     border-width: 0px;
     border-color: #DBA401;
-    z-index: -2;
+    z-index: -1;
+	float: left;
+    position: relative;
+	border-width: 1px;
 }
 
-a
+.menu-items p
 {
     color: black;
 }
 
-a:hover{
+.menu-items p:hover{
     color: #DBA401;
+	cursor: pointer;
 }
 input[type="submit"]{
     width: 100px;
@@ -120,126 +117,123 @@ input[type="submit"]{
     font-weight: 700;
     cursor: pointer;
     outline: none;
+}	/*Estilos para el encabezado*/
+.header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;left: 0;
+	background-color: #F3F3FA ;
+	z-index: 999;
+}
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+.container .btn-menu, .logo{
+	float: left;
+	line-height:100px;
+}
+.container .btn-menu label{
+	color: rgb(31, 30, 30);
+	font-size: 25px;
+	cursor: pointer;
+}
+.logo h1{
+	color: rgb(32, 32, 32);
+	font-weight: 400;
+	font-size: 22px;
+	margin-left: 10px;
+}
+.container .menu{
+	float: right;
+	line-height: 100px;
+}
+.container .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+}
+.container .menu a:hover{
+	border-bottom: 2px solid #EFD319;
+	padding-bottom: 5px;
 }
 
-	/*Estilos para el encabezado*/
-	.header{
-		width: 100%;
-		height: 100px;
-		position: fixed;
-		top: 0;left: 0;
-		background-color: #F3F3FA ;
-        z-index: 999;
-	}
-	.container{
-		width: 90%;
-		max-width: 1200px;
-		margin: auto;
-	}
-	.container .btn-menu, .logo{
-		float: left;
-		line-height:100px;
-	}
-	.container .btn-menu label{
-		color: rgb(31, 30, 30);
-		font-size: 25px;
-		cursor: pointer;
-	}
-	.logo h1{
-		color: rgb(32, 32, 32);
-		font-weight: 400;
-		font-size: 22px;
-		margin-left: 10px;
-	}
-	.container .menu{
-		float: right;
-		line-height: 100px;
-	}
-	.container .menu a{
-		display: inline-block;
-		padding: 15px;
-		line-height: normal;
-		text-decoration: none;
-		color: rgb(0, 0, 0);
-		transition: all 0.3s ease;
-		border-bottom: 2px solid transparent;
-		font-size: 15px;
-		margin-right: 5px;
-	}
-	.container .menu a:hover{
-		border-bottom: 2px solid #EFD319;
-		padding-bottom: 5px;
-	}
-	/*Fin de Estilos para el encabezado*/
+/*Fin de Estilos para el encabezado*/
 
-	/*Menù lateral*/
-	#btn-menu{
-		display: none;
-	}
-	.container-menu{
-		position: absolute;
-		background: rgba(245, 243, 243, 0.5);
-		width: 100%;
-		height: 100vh;
-		top: 0;left: 0;
-		transition: all 500ms ease;
-		opacity: 0;
-		visibility: hidden;
-        z-index: 999;
-	}
-	#btn-menu:checked ~ .container-menu{
-		opacity: 1;
-		visibility: visible;
-	}
-	.cont-menu{
-		width: 100%;
-		max-width: 250px;
-		background: #DDDCDD;
-		height: 100vh;
-		position: fixed;
-		transition: all 250ms ease;
-		transform: translateX(-100%);
-	}
-	#btn-menu:checked ~ .container-menu .cont-menu{
-		transform: translateX(0%);
-	}
-	.cont-menu nav{
-		transform: translateY(15%);
-	}
-	.cont-menu nav a{
-		display: block;
-		text-decoration: none;
-		padding: 20px;
-		color: #000000;
-		border-left: 5px solid transparent;
-		transition: all 400ms ease;
-	}
-	.cont-menu nav a:hover{
-		border-left: 5px solid #000000;
-		background: #EFD319;
-	}
-	.cont-menu label{
-		position: absolute;
-		right: 5px;
-		top: 10px;
-		color: #000000;
-		cursor: pointer;
-		font-size: 18px;
-	}
-	/*Fin de Menù lateral*/
-	
-	footer {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100;
-		background-color: #F3F3FA;
-		color: black;
-		text-align: center;
-		z-index: -1;
-		justify-content: center;
-		text-align: center;
-		font-weight: bold;
-	  }	
-	
+/*Menù lateral*/
+#btn-menu{
+	display: none;
+}
+.container-menu{
+	position: absolute;
+	background: rgba(245, 243, 243, 0.5);
+	width: 100%;
+	height: 100vh;
+	top: 0;left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 999;
+}
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: #DDDCDD;
+	height: 100vh;
+	position: fixed;
+	transition: all 250ms ease;
+	transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
+}
+.cont-menu nav{
+	transform: translateY(15%);
+}
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: #000000;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+	border-left: 5px solid #000000;
+	background: #EFD319;
+}
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #000000;
+	cursor: pointer;
+	font-size: 18px;
+}
+/*Fin de Menù lateral*/
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100;
+	background-color: #F3F3FA;
+	color: black;
+	text-align: center;
+	z-index: -3;
+	justify-content: center;
+	font-weight: bold;
+}	

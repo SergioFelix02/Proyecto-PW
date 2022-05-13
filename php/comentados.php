@@ -30,24 +30,24 @@
     <div class="capa"></div>
     <input type="checkbox" id="btn-menu">
     <div class="container-menu">
-    <div class="cont-menu">
-      <nav>
-        <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
-        <a href="../html/micuenta.html"><i class="fa-solid fa-user"></i> Mi Cuenta</a>
-        <a href="../html/categorias.html"><i class="fa-solid fa-book"></i> Categorías</a>
-        <a href="../php/favoritos.php"><i class="fa-solid fa-heart"></i> Mis Favoritos</a>
-        <a href="../php/populares.php"><i class="fa-solid fa-fire"></i> Más Populares</a>
-        <a href="../php/recienAgregados.php"><i class="fa-solid fa-clock"></i> Recién Agregados</a>
-        <a href="../php/mejorVotados.php"><i class="fa-solid fa-thumbs-up"></i> Mejor Votados</a>
-        <a href="../php/comentados.php"><i class="fa-solid fa-comment"></i> Más comentados</a>
-        <a href="#"><i class="fa-solid fa-sliders"></i></i> Opciones</a>
-      </nav>
-      <label for="btn-menu"><i class="fa-solid fa-angles-left"></i></label>
-    </div>
+      <div class="cont-menu">
+        <nav>
+          <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+          <a href="../html/micuenta.html"><i class="fa-solid fa-user"></i> Mi Cuenta</a>
+          <a href="../html/categorias.html"><i class="fa-solid fa-book"></i> Categorías</a>
+          <a href="../php/favoritos.php"><i class="fa-solid fa-heart"></i> Mis Favoritos</a>
+          <a href="../php/populares.php"><i class="fa-solid fa-fire"></i> Más Populares</a>
+          <a href="../php/recienAgregados.php"><i class="fa-solid fa-bolt"></i> Recién Agregados</a>
+          <a href="../php/mejorVotados.php"><i class="fa-solid fa-thumbs-up"></i> Mejor Votados</a>
+          <a href="../php/comentados.php"><i class="fa-solid fa-comment"></i> Más comentados</a>
+          <a href="#"><i class="fa-solid fa-sliders"></i></i> Opciones</a>
+          </nav>
+        <label for="btn-menu"><i class="fa-solid fa-angles-left"></i></label>
+      </div>
     </div>
 
     <br><br><br><br>
-    <h2 style="text-align: center;"><i class="fa-solid fa-fire"></i> Más Comentados</h2>
+    <h2 style="text-align: center;"><i class="fa-solid fa-comment"></i> Más Comentados</h2>
 
     <div class="row">  
     <?php

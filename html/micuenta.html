@@ -5,6 +5,7 @@
 	<title>Mi Cuenta</title>
 	<link rel="stylesheet" href="../css/style-micuenta.css">
 	<script src="https://kit.fontawesome.com/d62b608a4d.js" crossorigin="anonymous"></script>  <!--Esto debe ir para los íconos-->
+	<script src="../js/js-micuenta.js"></script>
 	<link rel="icon" href="../img/icon.ico">
 </head>
 <body>
@@ -17,71 +18,71 @@
 				
 			</div>
 			<nav class="menu">
-				<a href="index.html">Inicio</a>
+				<a href="../index.html">Inicio</a>
 				<a href="#">Carrito</a>
-				<a href="html/login.html">Iniciar Sesion</a>
+				<a href="../html/login.html">Iniciar Sesion</a>
 			</nav>
 		</div>
 	</header>
 	<div class="capa"></div>
 	
-<!--Menu Lateral--------------->
-<input type="checkbox" id="btn-menu">
-<div class="container-menu">
-	<div class="cont-menu">
-		<nav>
-			<a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
-			<a href="../html/micuenta.html"><i class="fa-solid fa-user"></i> Mi Cuenta</a>
-			<a href="../html/categorias.html"><i class="fa-solid fa-book"></i> Categorías</a>
-			<a href="../php/favoritos.php"><i class="fa-solid fa-heart"></i> Mis Favoritos</a>
-			<a href="../php/populares.php"><i class="fa-solid fa-fire"></i> Más Populares</a>
-			<a href="../php/recienAgregados.php"><i class="fa-solid fa-clock"></i> Recién Agregados</a>
-			<a href="../php/mejorVotados.php"><i class="fa-solid fa-thumbs-up"></i> Mejor Votados</a>
-			<a href="../php/comentados.php"><i class="fa-solid fa-comment"></i> Más comentados</a>
-			<a href="#"><i class="fa-solid fa-sliders"></i></i> Opciones</a>
-		  </nav>
-		<label for="btn-menu"><i class="fa-solid fa-angles-left"></i></label>
+	<!--Menu Lateral--------------->
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+				<a href="../html/micuenta.html"><i class="fa-solid fa-user"></i> Mi Cuenta</a>
+				<a href="../html/categorias.html"><i class="fa-solid fa-book"></i> Categorías</a>
+				<a href="../php/favoritos.php"><i class="fa-solid fa-heart"></i> Mis Favoritos</a>
+				<a href="../php/populares.php"><i class="fa-solid fa-fire"></i> Más Populares</a>
+				<a href="../php/recienAgregados.php"><i class="fa-solid fa-bolt"></i> Recién Agregados</a>
+				<a href="../php/mejorVotados.php"><i class="fa-solid fa-thumbs-up"></i> Mejor Votados</a>
+				<a href="../php/comentados.php"><i class="fa-solid fa-comment"></i> Más comentados</a>
+				<a href="#"><i class="fa-solid fa-sliders"></i></i> Opciones</a>
+			</nav>
+			<label for="btn-menu"><i class="fa-solid fa-angles-left"></i></label>
+		</div>
 	</div>
-</div>
-<br><br><br><br>
+	<br><br><br><br>
 
-<div class="container-all">
-	<div class="container-top">
-		<div class="menu-profile">
+	<div class="container-all">
+		<div class="container-left">
+			<div class="menu-profile">
+				<nav>
+					<img src="#" class="icon">
+					<h4>Nombre</h4>
+					<h4># Seguidores | # Siguiendo</h4>
+					<form>
+						<input type="submit" name="editar" value="Editar">
+					</form>
+				</nav>
+			</div>
+			<br>    
+			<div class="menu-items">
+				<nav>
+					<h4><p onclick="setMiPerfil()"><i class="fa-solid fa-user"></i> Mi Perfil</p></h4>
+					<h4><p onclick="setLeerDespues()"><i class="fa-solid fa-clock"></i> Leer Después</p></h4>
+					<h4><p onclick="setHistorial()"><i class="fa-solid fa-clock-rotate-left"></i> Historial</p></h4>
+					<h4><p onclick="setOpciones()"><i class="fa-solid fa-sliders"></i> Opciones de la cuenta</p></h4>
+				</nav>
+			</div>
+		</div>
+		<div class="container-right">  
 			<nav>
-				<img src="#" class="icon">
-				<h4>Nombre</h4>
-				<h4># Seguidores | # Siguiendo</h4>
-				<form>
-					<input type="submit" name="editar" value="Editar">
-				</form>
+				<iframe src="" frameborder="0" width="1500px" height=680px id="frame"></iframe>
 			</nav>
 		</div>
-		<br>    
-		<div class="menu-items">
-			<nav>
-				<h4><a href="#">Mi Perfil</a></h4>
-				<h4><a href="#">Leer Después</a></h4>
-				<h4><a href="#">Historial</a></h4>
-				<h4><a href="#">Opciones de la cuenta</a></h4>
-			</nav>
+	</div>
+	<footer>
+		<div>
+			<p>Copyright © 2022. Todos los derechos reservados</p>
+			<p>Siguenos en nuestras redes
+				<a href=""><img src="../img/facebook.png"></a>
+				<a href=""><img src="../img/instagram.png"></a>
+				<a href=""><img src="../img/twitter.png"></a>
+			</p>
 		</div>
-	</div>
-	<div class="container-content">  
-		<nav>
-			<iframe src="" frameborder="0" width="100%" height=910px></iframe>
-		</nav>
-	</div>
-</div>
-<footer>
-	<div>
-		<p>Copyright © 2022. Todos los derechos reservados</p>
-		<p>Siguenos en nuestras redes
-			<a href=""><img src="../img/facebook.png"></a>
-			<a href=""><img src="../img/instagram.png"></a>
-			<a href=""><img src="../img/twitter.png"></a>
-		</p>
-	</div>
-</footer>
-</body>
+	</footer>
+	</body>
 </html> 

@@ -7,54 +7,18 @@
     <link rel="stylesheet" href="../css/style-catalogos.css">
     <script src="https://kit.fontawesome.com/d62b608a4d.js" crossorigin="anonymous"></script> 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <title>Más Populares</title>
+    <title>Leer Después</title>
     <link rel="icon" href="../img/icon.ico">
 </head>
 <body>
-    <header class="header">
-		<div class="container">
-		<div class="btn-menu">
-			<label for="btn-menu"><i class="fa-solid fa-bars"></i></i></label>
-		</div>
-			<div class="logo">
-				<h1></h1>
-			</div>
-			<nav class="menu"> 
-				<a href="../index.html">Inicio</a>
-				<a href="#">Carrito</a>
-				<a href="../html/login.html">Iniciar Sesion</a>
-			</nav>
-		</div>
-	</header>
 
-    <div class="capa"></div>
-    <input type="checkbox" id="btn-menu">
-    <div class="container-menu">
-      <div class="cont-menu">
-        <nav>
-          <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
-          <a href="../html/micuenta.html"><i class="fa-solid fa-user"></i> Mi Cuenta</a>
-          <a href="../html/categorias.html"><i class="fa-solid fa-book"></i> Categorías</a>
-          <a href="../php/favoritos.php"><i class="fa-solid fa-heart"></i> Mis Favoritos</a>
-          <a href="../php/populares.php"><i class="fa-solid fa-fire"></i> Más Populares</a>
-          <a href="../php/recienAgregados.php"><i class="fa-solid fa-bolt"></i> Recién Agregados</a>
-          <a href="../php/mejorVotados.php"><i class="fa-solid fa-thumbs-up"></i> Mejor Votados</a>
-          <a href="../php/comentados.php"><i class="fa-solid fa-comment"></i> Más comentados</a>
-          <a href="#"><i class="fa-solid fa-sliders"></i></i> Opciones</a>
-          </nav>
-        <label for="btn-menu"><i class="fa-solid fa-angles-left"></i></label>
-      </div>
-    </div>
-
-    <br><br><br><br>
-    <h2 style="text-align: center;"><i class="fa-solid fa-fire"></i> Más Populares</h2>
-
+  <h2 style="text-align: center;"><i class="fa-solid fa-clock"></i> Leer Después</h2>
     <div class="row">  
     <?php
       include("connection.php");
       $conexion = mysqli_connect($server,$user,$pass,$bd)or die(mysql_error);
       $contador = 0;
-      $query = "select * from libros order by puntuacion desc";
+      $query = "select * from libros where leerdespues = 1";
       $resultado = $conexion->query($query);
       while($row = $resultado->fetch_assoc()){
         if ($contador >= 5){
@@ -93,15 +57,5 @@
            });
        });
        </script>
-        <footer>
-            <div>
-                <p>Copyright © 2022. Todos los derechos reservados</p>
-                <p>Siguenos en nuestras redes
-                    <a href=""><img src="../img/facebook.png"></a>
-                    <a href=""><img src="../img/instagram.png"></a>
-                    <a href=""><img src="../img/twitter.png"></a>
-                </p>
-            </div>
-        </footer>
 </body>
 </html>
