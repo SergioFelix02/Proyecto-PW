@@ -6,7 +6,7 @@ $(function(){
             $("#register").text("Inicia Sesion");
             $("h1").text("Registrarse");
             $("#text").text("Ya te registraste? ");
-            $("#button").html('<input id="btn2" type="submit" value="Registrarse">');
+            $("#button").html('<input id="btn" type="submit" value="Registrarse" name="btn">');
             alert("Ingresa un usuario y contraseña para registrarte");
         }
         else{
@@ -14,7 +14,7 @@ $(function(){
             $("#register").text("Registrate");
             $("h1").text("Iniciar Sesion");
             $("#text").text("No te has registrado? ");
-            $("#button").html('<input id="btn1" type="submit" value="Iniciar Sesion">');
+            $("#button").html('<input id="btn" type="submit" value="Iniciar Sesion" name="btn">');
         }
     })
     $("#btn1").submit(function(){

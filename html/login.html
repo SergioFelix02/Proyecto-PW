@@ -13,8 +13,8 @@
 </head>
 <body>
     <div class="center">
-        <h1>Iniciar sesion</h1>
         <form method="POST" action="../php/login.php">
+            <h1 id="opt">Iniciar sesion</h1>
             <div class="txtField">
                 <input id="usuario" type="text" required name="usuario">
                 <label>Usuario</label>
@@ -24,7 +24,7 @@
                 <label>Contrase&ntilde;a</label>
             </div>
             <div id="button">
-                <input id="btn" type="submit" value="Iniciar Sesion">
+                <input id="btn" type="submit" value="Iniciar Sesion" name="btn">
             </div>
             <div class="signupLink">
                 <div id="text">No te has registrado?</div> <a href="#" id="register">Registrate</a>
