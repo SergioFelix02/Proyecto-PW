@@ -55,7 +55,7 @@ h6{
     justify-content: center;
     text-align: center;
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: 5px;
     border-width: 1px;
     border-color: #D48B00;
     z-index: -2;
@@ -122,7 +122,6 @@ input[type="submit"]{
     outline: none;
 }
 
- 
 	/*Estilos para el encabezado*/
 	.header{
 		width: 100%;

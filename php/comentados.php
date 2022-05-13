@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style-catalogos.css">
     <script src="https://kit.fontawesome.com/d62b608a4d.js" crossorigin="anonymous"></script> 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <title>Mis Favoritos</title>
+    <title>Más Comentados</title>
     <link rel="icon" href="../img/icon.ico">
 </head>
 <body>
@@ -47,14 +47,14 @@
     </div>
 
     <br><br><br><br>
-    <h2 style="text-align: center;"><i class="fa-solid fa-fire"></i> Mis Favoritos</h2>
+    <h2 style="text-align: center;"><i class="fa-solid fa-fire"></i> Más Comentados</h2>
 
     <div class="row">  
     <?php
       include("conexion.php");
       $conexion = mysqli_connect($server,$user,$pass,$bd)or die(mysql_error);
       $contador = 0;
-      $query = "select * from libros where favoritos = 1";
+      $query = "select * from libros";
       $resultado = $conexion->query($query);
       while($row = $resultado->fetch_assoc()){
         if ($contador >= 5){
@@ -72,7 +72,7 @@
                 <img class="portada" src="<?php echo($row['foto']);?>"/>
                 <h4><?php echo $row['nombre']; ?></h4>
                 <p style="cursor:pointer;font-weight:bold"> <?php echo $row['autor']; ?> </p>
-            </div>    
+            </div>      
       <?php
       }
       ?>
