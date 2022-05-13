@@ -14,7 +14,7 @@ function setHistorial() {
 
 function setOpciones() {
     const frame = document.querySelector('iframe')
-    frame.setAttribute('src', "../php/opciones.php");
+    frame.setAttribute('src', "../php/opcionescuenta.php");
 }
 
 
