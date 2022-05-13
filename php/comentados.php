@@ -51,7 +51,7 @@
 
     <div class="row">  
     <?php
-      include("conexion.php");
+      include("connection.php");
       $conexion = mysqli_connect($server,$user,$pass,$bd)or die(mysql_error);
       $contador = 0;
       $query = "select * from libros";
@@ -72,7 +72,8 @@
                 <img class="portada" src="<?php echo($row['foto']);?>"/>
                 <h4><?php echo $row['nombre']; ?></h4>
                 <p style="cursor:pointer;font-weight:bold"> <?php echo $row['autor']; ?> </p>
-            </div>      
+                <h4><?php echo $row['categoria']; ?></h4>
+            </div>       
       <?php
       }
       ?>
