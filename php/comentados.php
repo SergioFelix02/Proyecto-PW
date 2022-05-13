@@ -94,14 +94,13 @@
        });
        </script>
         <footer>
-          <div class="footer">
-            <p>Copyright - Todos los derechos reservados</p>
-            <p>Siguenos en nuestras redes</p>	
-            <p>
-              <a href="">Facebook</a>
-              <a href="">Instagram</a>
-              <a href="">Twitter</a>
-            </p>
+            <div>
+                <p>Copyright © 2022. Todos los derechos reservados</p>
+                <p>Siguenos en nuestras redes
+                    <a href=""><img src="../img/facebook.png"></a>
+                    <a href=""><img src="../img/instagram.png"></a>
+                    <a href=""><img src="../img/twitter.png"></a>
+                </p>
             </div>
         </footer>
 </body>
