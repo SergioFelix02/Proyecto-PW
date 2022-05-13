@@ -40,7 +40,7 @@
           <a href="../php/recienAgregados.php"><i class="fa-solid fa-bolt"></i> Recién Agregados</a>
           <a href="../php/mejorVotados.php"><i class="fa-solid fa-thumbs-up"></i> Mejor Votados</a>
           <a href="../php/comentados.php"><i class="fa-solid fa-comment"></i> Más comentados</a>
-          <a href="#"><i class="fa-solid fa-sliders"></i></i> Opciones</a>
+          <a href="../html/opciones.html"><i class="fa-solid fa-sliders"></i></i> Opciones</a>
           </nav>
         <label for="btn-menu"><i class="fa-solid fa-angles-left"></i></label>
       </div>
