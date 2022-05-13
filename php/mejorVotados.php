@@ -67,7 +67,7 @@
         ?>  
             <div class="book block">
                 <i id="f1" class="fa-solid fa-heart favorite favoriteActive" style="font-size:20px"></i>
-                <p style="cursor:pointer;font-weight:bold"> <?php echo "Puntuacion: " . $row['puntuacion']; ?> </p>
+                <p style="cursor:pointer;font-weight:bold"> <?php echo "Puntuacion: " . $row['puntuacion'] . " "; ?><i class="fa-solid fa-star"></i> </p>
                 <img class="portada" src="<?php echo($row['foto']);?>"/>
                 <h4><?php echo $row['nombre']; ?></h4>
                 <p style="cursor:pointer;font-weight:bold"> <?php echo $row['autor']; ?> </p>
